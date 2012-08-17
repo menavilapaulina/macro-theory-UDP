@@ -1,6 +1,17 @@
 Problem Set 1
 ========================================================
 
+## Instructions
+
+0. Deadline: Thursday, 23-August-2012
+
+1. You don't have to type your answers, handwriting it's perfectly acceptable and even preferable in a first pass. Later, I'll ask you and your classmates to produce a properly written solution, in $\mathrm{\LaTeX}$.
+
+2. It's OK (it's encouraged, even) to work in pairs or groups. But you need to submit individual set of answers and it shouldn't be identical.
+
+3. Your grade is the grade of the answer sheet you submitted ... subject to an important contingency: after the deadline is met, I'll take a short quiz for everyone, with one of the questions featured in the problem set and I'll grade it. *If you score a red grade* then it will become your final grade for the entire problem set. So say that you submitted your Problem Set 2, and you got a 5.8 grade. But if later I ask you **one** question of the same PS 2, and you do it poorly and get a 3.1 grade, then 3.1 becomes your final grade for PS 2 is . But if you score a 6.5 in the quiz, then your 5.8 stays as the definitive grade.
+
+
 ## Exercise 1: Solow-Swan's differential equation
 
 Let's solve, for the Cobb-Douglas case, the differential equation that describes the dynamics of (per capita) capital accumulation. If the production function is given by $Y_t = A K_t^\alpha L_t^{1-\alpha}$, and in per capita terms by $y_t = A k_t^{\alpha}$, then the DE is :
@@ -52,8 +63,8 @@ the profit maximization implies
 
 ## Exercise 4: conditioning and marginalizing 
 
-+ 4.1 Write down bayes rule for $f_{X|Y}(x|y)$ 
-+ 4.2 Write down bayes rule for $f_{X|Y,Z}(x|y,z)$, maintaining the conditioning on $Z=z$.
++ 4.1 Write down Bayes rule for $f_{X|Y}(x|y)$ 
++ 4.2 Write down Bayes rule for $f_{X|Y,Z}(x|y,z)$, maintaining the conditioning on $Z=z$.
 + 4.3 Show how  can you obtain $f(x,y)$ using only $f(x,y,z$) or using together $f_{Y,X|Z}(x,y|z)$ and $f_{Z}(z)$. 
 + 4.4 Suppose that $x$ and $y$ have a joint distribution that is uniform. The support of the joint distribution is given by $\{(x,y): x \in (0,y), y \in (0,1)\}$.
    - Draw a diagram showing the support of $f(x,y)$.
@@ -70,9 +81,27 @@ the profit maximization implies
 
 # Exercise 6: Difference and differential stability
 
-+ Finda, manually, the eigenvalues of matrix $A$, below: 
+- Consider the matrix $A$, below:
 $$
 A = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix}
 $$
+   + Write down the characteristic polynomial of matrix $A$: 
+
+   + Find the eigenvalues of $A$ using the characteristic equation
+   
+- Consider the system of equations on $(\dot{\aleph}_t, \dot{\pi}^e_t)$ that appear in Chapter 2, section 2.5.
+    + Write it in matrix form
+    + Write the characteristic polynomial
+    + Write the solutions to the characteristic equations
+    
+- What is the condition for the local stability of the steady state in a system of differential equations?
+
+- What is the condition for the local stability of the steady state in a system of difference equations?
+
+
 
 # Exercise 7: Summation and lag operators.
++ If $|\beta|<1$ what is the value of $\sum_{i=0}^\infty \beta^i$
++ Let $\mathcal{L}$ be the lag operator. If $|\lambda|<1$ what is the value of $\sum_{i=0}^\infty (\lambda \mathcal{L})^i = \sum_{i=0}^\infty \lambda^i \mathcal{L}^i$ ?
++ If $|\mu|<1$ what is the value of $\sum_{i=0}^\infty (\mu \mathcal{L}^{-1})^i = \sum_{i=0}^\infty \mu^i \mathcal{L}^{-i}$ ?
++ Why $\dfrac{D z_t}{1 -\mu \mathcal{L}^{-1}} = \sum_{j=0}^{\infty} D \mu^{j} E_t[z_{t+j}]$ ? 

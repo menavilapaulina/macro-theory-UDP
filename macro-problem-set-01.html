@@ -149,6 +149,15 @@ hr {
 <body>
 <h1>Problem Set 1</h1>
 
+<h2>Instructions</h2>
+
+<ol>
+<li><p>Deadline: Thursday, 23-August-2012</p></li>
+<li><p>You don&#39;t have to type your answers, handwriting it&#39;s perfectly acceptable and even preferable in a first pass. Later, I&#39;ll ask you and your classmates to produce a properly written solution, in \( \mathrm{\LaTeX} \).</p></li>
+<li><p>It&#39;s OK (it&#39;s encouraged, even) to work in pairs or groups. But you need to submit individual set of answers and it shouldn&#39;t be identical.</p></li>
+<li><p>Your grade is the grade of the answer sheet you submitted &hellip; subject to an important contingency: after the deadline is met, I&#39;ll take a short quiz for everyone, with one of the questions featured in the problem set and I&#39;ll grade it. <em>If you score a red grade</em> then it will become your final grade for the entire problem set. So say that you submitted your Problem Set 2, and you got a 5.8 grade. But if later I ask you <strong>one</strong> question of the same PS 2, and you do it poorly and get a 3.1 grade, then 3.1 becomes your final grade for PS 2 is . But if you score a 6.5 in the quiz, then your 5.8 stays as the definitive grade.</p></li>
+</ol>
+
 <h2>Exercise 1: Solow-Swan&#39;s differential equation</h2>
 
 <p>Let&#39;s solve, for the Cobb-Douglas case, the differential equation that describes the dynamics of (per capita) capital accumulation. If the production function is given by \( Y_t = A K_t^\alpha L_t^{1-\alpha} \), and in per capita terms by \( y_t = A k_t^{\alpha} \), then the DE is :</p>
@@ -203,8 +212,8 @@ Y = N \left( \int_0^1 X_i^\eta \right)^{1/\eta}
 <h2>Exercise 4: conditioning and marginalizing</h2>
 
 <ul>
-<li>4.1 Write down bayes rule for \( f_{X|Y}(x|y) \) </li>
-<li>4.2 Write down bayes rule for \( f_{X|Y,Z}(x|y,z) \), maintaining the conditioning on \( Z=z \).</li>
+<li>4.1 Write down Bayes rule for \( f_{X|Y}(x|y) \) </li>
+<li>4.2 Write down Bayes rule for \( f_{X|Y,Z}(x|y,z) \), maintaining the conditioning on \( Z=z \).</li>
 <li>4.3 Show how  can you obtain \( f(x,y) \) using only \( f(x,y,z \)) or using together \( f_{Y,X|Z}(x,y|z) \) and \( f_{Z}(z) \). </li>
 <li>4.4 Suppose that \( x \) and \( y \) have a joint distribution that is uniform. The support of the joint distribution is given by \( \{(x,y): x \in (0,y), y \in (0,1)\} \).
 
@@ -227,13 +236,34 @@ Y = N \left( \int_0^1 X_i^\eta \right)^{1/\eta}
 <h1>Exercise 6: Difference and differential stability</h1>
 
 <ul>
-<li>Finda, manually, the eigenvalues of matrix \( A \), below: 
+<li><p>Consider the matrix \( A \), below:<br/>
 \[ 
 A = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix}
- \]</li>
+ \]</p>
+
+<ul>
+<li>Write down the characteristic polynomial of matrix \( A \): </li>
+<li>Find the eigenvalues of \( A \) using the characteristic equation</li>
+</ul></li>
+<li><p>Consider the system of equations on \( (\dot{\aleph}_t, \dot{\pi}^e_t) \) that appear in Chapter 2, section 2.5.</p>
+
+<ul>
+<li>Write it in matrix form</li>
+<li>Write the characteristic polynomial</li>
+<li>Write the solutions to the characteristic equations</li>
+</ul></li>
+<li><p>What is the condition for the local stability of the steady state in a system of differential equations?</p></li>
+<li><p>What is the condition for the local stability of the steady state in a system of difference equations?</p></li>
 </ul>
 
 <h1>Exercise 7: Summation and lag operators.</h1>
+
+<ul>
+<li>If \( |\beta|<1 \) what is the value of \( \sum_{i=0}^\infty \beta^i \)</li>
+<li>Let \( \mathcal{L} \) be the lag operator. If \( |\lambda|<1 \) what is the value of \( \sum_{i=0}^\infty (\lambda \mathcal{L})^i = \sum_{i=0}^\infty \lambda^i \mathcal{L}^i \) ?</li>
+<li>If \( |\mu|<1 \) what is the value of \( \sum_{i=0}^\infty (\mu \mathcal{L}^{-1})^i = \sum_{i=0}^\infty \mu^i \mathcal{L}^{-i} \) ?</li>
+<li>Why \( \dfrac{D z_t}{1 -\mu \mathcal{L}^{-1}} = \sum_{j=0}^{\infty} D \mu^{j} E_t[z_{t+j}] \) ? </li>
+</ul>
 
 </body>
 
